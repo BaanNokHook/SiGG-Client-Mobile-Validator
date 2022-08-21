@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Push Notifications using Node.js and Web Push</title>
+      <link rel="icon" type="image/png" href="https://d2cy1obokpvee9.cloudfront.net/manifest/favicon-196x196.png" sizes="196x196" class="next-head">
+      <link rel="stylesheet" href="style.css">
+      <!-- <script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script> -->
+    </head>
+    <body>
+      <header>
+        <h1>Web Push Notifications Demo</h1>
+      </header>
+    
+      <div class="buttons">
+        <button class="trigger-push">Trigger Push Notification</button>
+      </div>
+    
+      <!-- <script>
+        const beamsClient = new PusherPushNotifications.Client({
+          instanceId: 'ed6e47de-ab49-489a-8982-eeec598b2b8b',
+        });
+      
+        beamsClient.start()
+          .then(() => beamsClient.addDeviceInterest('hello'))
+          .then(() => console.log('Successfully registered and subscribed!'))
+          .catch(console.error);
+      </script> -->
+      <script src="main.js"></script>
+    </body>
+    </html>

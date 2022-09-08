@@ -7,7 +7,7 @@
       <title>Push Notifications using Node.js and Web Push</title>
       <link rel="icon" type="image/png" href="https://d2cy1obokpvee9.cloudfront.net/manifest/favicon-196x196.png" sizes="196x196" class="next-head">
       <link rel="stylesheet" href="style.css">
-      <!-- <script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script> -->
+      <script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script>
     </head>
     <body>
       <header>
@@ -15,19 +15,9 @@
       </header>
     
       <div class="buttons">
-        <button class="trigger-push">Trigger Push Notification</button>
+        <button id="btnSub" class="trigger-push">Subscribe</button>
+        <button id="btnUnsub" class="trigger-push">Unsubscribe</button>
       </div>
-    
-      <!-- <script>
-        const beamsClient = new PusherPushNotifications.Client({
-          instanceId: 'ed6e47de-ab49-489a-8982-eeec598b2b8b',
-        });
-      
-        beamsClient.start()
-          .then(() => beamsClient.addDeviceInterest('hello'))
-          .then(() => console.log('Successfully registered and subscribed!'))
-          .catch(console.error);
-      </script> -->
       <script src="main.js"></script>
     </body>
     </html>
